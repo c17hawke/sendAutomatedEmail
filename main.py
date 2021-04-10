@@ -10,8 +10,5 @@ def sendMail(clientEmail):
         raise e
 
 if __name__=="__main__":
-    # clientEmail = "chatbot.c17hawke@gmail.com"
-    clientEmails = ["chetanhebbur@gmail.com", "rishavghosh321@gmail.com", "vinothgt007@gmail.com"] 
-    for email_ in clientEmails:
-        print(f"sending email to {email_}")
-        sendMail(email_)
+    clientEmail = input("input a valid client email ID: ")
+    sendMail(clientEmail)
